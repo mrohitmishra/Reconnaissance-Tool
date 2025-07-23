@@ -85,7 +85,7 @@ pip install requests
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/yourusername/bug-bounty-recon-tool.git
+git clone  https://github.com/mrohitmishra/Reconnaissance-Tool.git
 cd bug-bounty-recon-tool
 ```
 
