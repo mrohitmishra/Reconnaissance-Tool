@@ -1,0 +1,147 @@
+{
+  "target": "oceanvps.in",
+  "timestamp": "2025-07-23T18:30:30.389470",
+  "subdomains": [
+    "www.oceanvps.in"
+  ],
+  "ports": {
+    "104.21.71.183": [
+      80,
+      443,
+      8080,
+      8443
+    ]
+  },
+  "technologies": {
+    "https://oceanvps.in": {
+      "detected": [
+        "Bootstrap"
+      ],
+      "server": "cloudflare",
+      "powered_by": "ASP.NET"
+    },
+    "https://www.oceanvps.in": {
+      "detected": [
+        "Bootstrap"
+      ],
+      "server": "cloudflare",
+      "powered_by": "ASP.NET"
+    }
+  },
+  "directories": [
+    {
+      "path": "admin",
+      "status": 301,
+      "size": 149
+    },
+    {
+      "path": "admin",
+      "status": 301,
+      "size": 153
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "type": "Missing Security Header",
+      "description": "X-Frame-Options header is missing",
+      "url": "https://oceanvps.in",
+      "severity": "Medium",
+      "manual_test": "Test for clickjacking by embedding the page in an iframe"
+    },
+    {
+      "type": "Missing Security Header",
+      "description": "Content-Security-Policy header is missing",
+      "url": "https://oceanvps.in",
+      "severity": "Medium",
+      "manual_test": "Test for XSS vulnerabilities and inline script execution"
+    },
+    {
+      "type": "Information Disclosure",
+      "description": "X-Powered-By header reveals: ASP.NET",
+      "url": "https://oceanvps.in",
+      "severity": "Low",
+      "manual_test": "Research known vulnerabilities for the disclosed technology"
+    },
+    {
+      "type": "Missing Security Header",
+      "description": "X-Frame-Options header is missing",
+      "url": "https://www.oceanvps.in",
+      "severity": "Medium",
+      "manual_test": "Test for clickjacking by embedding the page in an iframe"
+    },
+    {
+      "type": "Missing Security Header",
+      "description": "Content-Security-Policy header is missing",
+      "url": "https://www.oceanvps.in",
+      "severity": "Medium",
+      "manual_test": "Test for XSS vulnerabilities and inline script execution"
+    },
+    {
+      "type": "Information Disclosure",
+      "description": "X-Powered-By header reveals: ASP.NET",
+      "url": "https://www.oceanvps.in",
+      "severity": "Low",
+      "manual_test": "Research known vulnerabilities for the disclosed technology"
+    }
+  ],
+  "ssl_info": {
+    "oceanvps.in": {
+      "subject": {
+        "commonName": "oceanvps.in"
+      },
+      "issuer": {
+        "countryName": "US",
+        "organizationName": "Google Trust Services",
+        "commonName": "WE1"
+      },
+      "version": 3,
+      "serial_number": "3CA7F453C7E041740E5922DD5B5D74B7",
+      "not_before": "Jun  4 12:30:43 2025 GMT",
+      "not_after": "Sep  2 13:23:01 2025 GMT",
+      "cipher_suite": "TLS_AES_256_GCM_SHA384",
+      "tls_version": "TLSv1.3"
+    }
+  },
+  "headers": {
+    "https://oceanvps.in": {
+      "X-Frame-Options": null,
+      "X-XSS-Protection": null,
+      "X-Content-Type-Options": null,
+      "Strict-Transport-Security": null,
+      "Content-Security-Policy": null,
+      "X-Powered-By": "ASP.NET",
+      "Server": "cloudflare"
+    },
+    "https://www.oceanvps.in": {
+      "X-Frame-Options": null,
+      "X-XSS-Protection": null,
+      "X-Content-Type-Options": null,
+      "Strict-Transport-Security": null,
+      "Content-Security-Policy": null,
+      "X-Powered-By": "ASP.NET",
+      "Server": "cloudflare"
+    }
+  },
+  "manual_testing_suggestions": [
+    {
+      "target": "admin",
+      "test_type": "Admin Panel Testing",
+      "manual_steps": [
+        "Test for default credentials",
+        "Check for brute force protection",
+        "Look for privilege escalation",
+        "Test session management"
+      ]
+    },
+    {
+      "target": "admin",
+      "test_type": "Admin Panel Testing",
+      "manual_steps": [
+        "Test for default credentials",
+        "Check for brute force protection",
+        "Look for privilege escalation",
+        "Test session management"
+      ]
+    }
+  ]
+}
