@@ -643,9 +643,7 @@ Recommended RAM: 512 MB minimum, 1 GB recommended
 
 ### Professional Support
 For enterprise features or custom development:
-- Email: security@yourcompany.com
-- LinkedIn: [Your LinkedIn Profile]
-- Website: [Your Website]
+- Email: mrohit.cyber@gmail.com
 
 ## 📄 License
 
